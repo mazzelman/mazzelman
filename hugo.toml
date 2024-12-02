@@ -3,7 +3,7 @@ languageCode = 'de-DE'
 title = 'Marcel Epp | Angehender Fachinformatiker in der Systemintegration'
 theme = 'Terminal'
 defaultContentLanguage = 'de'
-relativeURLs = true
+relativeURLs = false
 canonifyURLs = false
 
 [languages]

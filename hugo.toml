@@ -11,3 +11,10 @@ canonifyURLs = false
   title = "Marcel Epp | Angehender Fachinformatiker in der Systemintegration"
   languageName = "Deutsch"
   weight = 1
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+    [markup.goldmark.extensions]
+      fencedCodeBlocks = true

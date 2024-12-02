@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Powershell on Marcel Epp | Angehender Fachinformatiker in der Systemintegration</title>
+    <link>http://localhost:1313/tags/powershell/</link>
+    <description>Recent content in Powershell on Marcel Epp | Angehender Fachinformatiker in der Systemintegration</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de</language>
+    <lastBuildDate>Wed, 29 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/powershell/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Die Powershell in Windows hübscher machen</title>
+      <link>http://localhost:1313/posts/2024/12/die-powershell-in-windows-h%C3%BCbscher-machen/</link>
+      <pubDate>Wed, 29 Nov 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2024/12/die-powershell-in-windows-h%C3%BCbscher-machen/</guid>
+      <description>&lt;p&gt;Über die Jahre ist die Microsoft Eingabeaufforderung (CMD) immer besser geworden. Seit einiger Zeit, bietet Microsoft auch das Programm &amp;ldquo;Terminal&amp;rdquo; an, welches ich hier in diesem Beitrag verwende. Sollte das Terminal nicht installiert sein, kann man es bequem aus dem &lt;a href=&#34;https://www.microsoft.com/store/productId/9N0DX20HK701?ocid=pdpshare&#34; target=&#34;_blank&#34;&gt;Microsoft Store&lt;/a&gt; installieren. Wenn man nun das Terminal startet, sollte das ganze in etwa so aussehen:&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;Terminal_1.png&#34; src=&#34;http://localhost:1313/images/Terminal_1.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Um zusätzlich die neue Windows Powershell zu verwenden, habe ich das Paket von Microsoft installiert. Die Powershell 7 kann &lt;a href=&#34;https://learn.microsoft.com/de-de/powershell/scripting/install/installing-powershell-on-windows?view=powershell-7.4&#34; target=&#34;_blank&#34;&gt;hier&lt;/a&gt; herunter geladen werden. In den Einstellungen kann dann die neue Powershell als Standardprofil ausgewählt werden.&lt;/p&gt;</description>
+      <content>&lt;p&gt;Über die Jahre ist die Microsoft Eingabeaufforderung (CMD) immer besser geworden. Seit einiger Zeit, bietet Microsoft auch das Programm &amp;ldquo;Terminal&amp;rdquo; an, welches ich hier in diesem Beitrag verwende. Sollte das Terminal nicht installiert sein, kann man es bequem aus dem &lt;a href=&#34;https://www.microsoft.com/store/productId/9N0DX20HK701?ocid=pdpshare&#34; target=&#34;_blank&#34;&gt;Microsoft Store&lt;/a&gt; installieren. Wenn man nun das Terminal startet, sollte das ganze in etwa so aussehen:&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;Terminal_1.png&#34; src=&#34;http://localhost:1313/images/Terminal_1.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Um zusätzlich die neue Windows Powershell zu verwenden, habe ich das Paket von Microsoft installiert. Die Powershell 7 kann &lt;a href=&#34;https://learn.microsoft.com/de-de/powershell/scripting/install/installing-powershell-on-windows?view=powershell-7.4&#34; target=&#34;_blank&#34;&gt;hier&lt;/a&gt; herunter geladen werden. In den Einstellungen kann dann die neue Powershell als Standardprofil ausgewählt werden.&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;Terminal_2.png&#34; src=&#34;http://localhost:1313/images/Terminal_2.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Nun hat man die Powershell der Version 7 als Standard.&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;Terminal_3.png&#34; src=&#34;http://localhost:1313/images/Terminal_3.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Um das ganze jetzt etwas informativer und schöner zu gestalten, kann man sich zu der Seite &lt;a href=&#34;https://ohmyposh.dev/&#34; target=&#34;_blank&#34;&gt;&amp;ldquo;Oh My Posh&amp;rdquo;&lt;/a&gt; begeben. Hier kann im Bereich Installation auf English nachschauen, wie die Installation funktioniert. Ich gehe die Installation aber auch hier Stück für Stück durch.&lt;/p&gt;
+&lt;p&gt;Als erstes installiert man sich &amp;ldquo;Oh My Posh&amp;rdquo; mit folgendem Befehl. Hier wird dazu der in Windows 11 integrierte Paketmanager &amp;ldquo;WinGet&amp;rdquo; benutzt.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-Powershell&#34; data-lang=&#34;Powershell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;winget install JanDeDobbeleer.OhMyPosh -s winget
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Wenn alles funktioniert hatte sollte es ungefähr so aussehen:&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;Terminal_4.png&#34; src=&#34;http://localhost:1313/images/Terminal_4.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Wichtig! Jetzt muss das Terminal einmal neu gestartet werden, damit der Befehl akzeptiert wird.&lt;/p&gt;
+&lt;p&gt;Mit dem Befehl &amp;ldquo;oh-my-posh version&amp;rdquo;, kann man jetzt überprüfen ob alles funktioniert. Bei mir wird die Version 24.11.2 ausgegeben.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-Powershell&#34; data-lang=&#34;Powershell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;oh-my-posh version
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Der nächste Schritt ist eine Schriftart zu installieren, die mit den Symbolen umgehen kann. Wie auf der Hauptseite erwähnt nehme ich ebenfalls die Schriftart &amp;ldquo;meslo&amp;rdquo; (Nerdfonts). Der Befehl dafür lautet:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-Powershell&#34; data-lang=&#34;Powershell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;oh-my-posh font install meslo
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Wenn der Download über das Terminal nicht funktioniert, kann man die Schrift auch manuell von &lt;a href=&#34;https://github.com/ryanoasis/nerd-fonts/releases/latest/download/meslo.zip&#34; target=&#34;_blank&#34;&gt;Github&lt;/a&gt; herunter laden und installieren. Eine erfolgreiche Installation schaut so aus:&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;Terminal_5.png&#34; src=&#34;http://localhost:1313/images/Terminal_5.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Um die Schriftart nun im Terminal zu verwenden, muss man nun die JSON-Datei öffnen. Also &amp;ldquo;Einstellungen -&amp;gt; JSON-Datei öffnen&amp;rdquo; anklicken.&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;Terminal_6.png&#34; src=&#34;http://localhost:1313/images/Terminal_6.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Das öffnet den Code-Editor eurer Wahl. Bei mir ist es VS-Code. Hier sucht man die Stelle mit &amp;ldquo;profiles&amp;rdquo; und &amp;ldquo;defaults&amp;rdquo; heraus und fügt folgenden Befehl in die zwei geschwungen Klammern bei &amp;ldquo;defaults&amp;rdquo; ein.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-JSON&#34; data-lang=&#34;JSON&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;font&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;:&lt;/span&gt;{&lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;face&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;MesloLGM Nerd Font&amp;#34;&lt;/span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Das sieht dann ggf. so aus:&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;Terminal_7.png&#34; src=&#34;http://localhost:1313/images/Terminal_7.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Dann noch speichern und das Terminal neu starten. Die Schrift sollte nun ein ganz klein wenig anders aussehen. Jetzt kann man &amp;ldquo;Oh my Posh&amp;rdquo; zum ersten Mal aktivieren. Dazu muss man das Profile der Powershell anpassen. Ich mache das mit:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-Powershell&#34; data-lang=&#34;Powershell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;code $PROFILE
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Sollte man kein VS Code installiert haben, geht es auch mit dem in Windows mitgelieferten Notepad.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-Powershell&#34; data-lang=&#34;Powershell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;notepad $PROFILE
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Jetzt wir die Datei mit dem Namen &amp;ldquo;Microsoft.Powershell_profile.ps1&amp;rdquo; bearbeitet. Hier fügt man in die Datei folgendes hinzu:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-ps1&#34; data-lang=&#34;ps1&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;oh-my-posh init pwsh | Invoke-Expression
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Danach das Terminal neu starten. Wenn alles geklappt hat, sollte die Powershell nun so aussehen:&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;Terminal_8.png&#34; src=&#34;http://localhost:1313/images/Terminal_8.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Um nun ein anderes Theme zu benutzen kann man unter dem Bereich &lt;a href=&#34;https://ohmyposh.dev/docs/themes&#34; target=&#34;_blank&#34;&gt;Themes&lt;/a&gt; nachschauen. Ich mag das Theme &amp;ldquo;hul10&amp;rdquo; sehr gerne. Also lade ich mir die JSON-Datei direkt herunter und lege die Datei unter Dokumente -&amp;gt; Powershell ab. Jetzt öffne ich die Powershell Konfiguration erneut mit:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-Powershell&#34; data-lang=&#34;Powershell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;code $PROFILE
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Hier ersetze ich den vorhanden Text und speichere das Profil.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-Powershell&#34; data-lang=&#34;Powershell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;oh-my-posh init pwsh --config C:\Users\maz\Documents\PowerShell\hul10.omp.json | Invoke-Expression
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Hat alles geklappt, sieht das Terminal jetzt so aus:&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;Terminal_9.png&#34; src=&#34;http://localhost:1313/images/Terminal_9.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Optional: Um in VS Code auch die richtige Schrift zu bekommen, kann man in der &amp;ldquo;settings.json&amp;rdquo; folgendes hinzufügen:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-JSON&#34; data-lang=&#34;JSON&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;terminal.integrated.fontFamily&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;MesloLGM Nerd Font&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Happy Hacking! 🥳&lt;/p&gt;
+</content>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,4 +1,16 @@
 baseURL = 'https://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
-theme = 'PaperMod'
+languageCode = 'de-DE'
+title = 'Marcel Epp | Angehender Fachinformatiker in der Systemintegration'
+theme = 'Terminal'
+defaultContentLanguage = 'de'
+
+[languages]
+[languages.de]
+  title = "Marcel Epp | Angehender Fachinformatiker in der Systemintegration"
+  languageName = "Deutsch"
+  weight = 1
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

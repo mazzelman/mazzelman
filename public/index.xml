@@ -60,5 +60,54 @@
 </content>
     </item>
     
+    <item>
+      <title>Impressum</title>
+      <link>http://localhost:1313/mazzelman/impressum/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/mazzelman/impressum/</guid>
+      <description>&lt;p&gt;Verantwortlich für diese Webseite:&lt;/p&gt;
+&lt;p&gt;Marcel Epp&lt;br&gt;
+Am Diekberg 16&lt;br&gt;
+29393 Groß Oesingen&lt;br&gt;
+Deutschland&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;Kontaktmöglichkeiten&lt;br&gt;
+E-Mail-Adresse: &lt;a href=&#34;mailto@marcel.epp@tutanota.de&#34;&gt;&lt;a href=&#34;mailto:marcel.epp@tutanota.de&#34;&gt;marcel.epp@tutanota.de&lt;/a&gt;&lt;/a&gt;&lt;br&gt;
+Telefon: 01 51 / 20 28 67 73&lt;/p&gt;</description>
+      <content>&lt;p&gt;Verantwortlich für diese Webseite:&lt;/p&gt;
+&lt;p&gt;Marcel Epp&lt;br&gt;
+Am Diekberg 16&lt;br&gt;
+29393 Groß Oesingen&lt;br&gt;
+Deutschland&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;Kontaktmöglichkeiten&lt;br&gt;
+E-Mail-Adresse: &lt;a href=&#34;mailto@marcel.epp@tutanota.de&#34;&gt;&lt;a href=&#34;mailto:marcel.epp@tutanota.de&#34;&gt;marcel.epp@tutanota.de&lt;/a&gt;&lt;/a&gt;&lt;br&gt;
+Telefon: 01 51 / 20 28 67 73&lt;/p&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>Über mich</title>
+      <link>http://localhost:1313/mazzelman/ueber-mich/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/mazzelman/ueber-mich/</guid>
+      <description>&lt;p&gt;Ich bin 42 Jahre alt und glücklich verheiratet seit 2011. Wir haben 3 Kinder im Alter von 10, 9 und 4
+Jahren. In meiner Freizeit beschäftige ich mich sehr gerne mit dem Thema Computer. Dazu gehören
+das Zusammenbauen der Hardware sowie das Programmieren von Webseiten. Ich bin ein lebensfroher
+und lustiger Mensch, der sich gerne im Team engagiert. Viel Spaß habe ich bei der Arbeit, wenn die
+Abläufe strukturiert sind und ich nach diesem Plan meine Aufgaben erledigen kann. Gerne liefere ich
+auch kreative Lösungen für ein Problem. Seit 07/2024 nehme ich an einer Umschulung zum Fachinformatiker
+in der Systemintegration teil.&lt;/p&gt;</description>
+      <content>&lt;p&gt;Ich bin 42 Jahre alt und glücklich verheiratet seit 2011. Wir haben 3 Kinder im Alter von 10, 9 und 4
+Jahren. In meiner Freizeit beschäftige ich mich sehr gerne mit dem Thema Computer. Dazu gehören
+das Zusammenbauen der Hardware sowie das Programmieren von Webseiten. Ich bin ein lebensfroher
+und lustiger Mensch, der sich gerne im Team engagiert. Viel Spaß habe ich bei der Arbeit, wenn die
+Abläufe strukturiert sind und ich nach diesem Plan meine Aufgaben erledigen kann. Gerne liefere ich
+auch kreative Lösungen für ein Problem. Seit 07/2024 nehme ich an einer Umschulung zum Fachinformatiker
+in der Systemintegration teil.&lt;/p&gt;
+&lt;img src=&#34;../userimages/marcelepp.jpg&#34; alt=&#34;Marcel Epp&#34; style=&#34;border-radius: 50%;margin: auto;&#34; width=&#34;150px&#34; &gt;
+</content>
+    </item>
+    
   </channel>
 </rss>

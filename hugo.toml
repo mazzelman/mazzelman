@@ -19,18 +19,19 @@ canonifyURLs = false
       missingContentMessage = "Seite nicht gefunden..."
 
     [languages.de.params.logo]
-      logoText = "marcel epp"
-      logoHomeLink = "/"
+      logoText = "Marcel Epp"
 
     [languages.de.menu]
       [[languages.de.menu.main]]
         identifier = "about"
         name = "Über mich"
         url = "/ueber-mich"
+        weight = 1
       [[languages.de.menu.main]]
         identifier = "legal"
         name = "Impressum"
         url = "/impressum"
+        weight = 2
 
 [markup]
   [markup.goldmark]
@@ -41,4 +42,4 @@ canonifyURLs = false
 
 [params]
   # center theme with default width
-  centerTheme = false
+  centerTheme = true

@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html lang="de">
-<head>
-	<meta name="generator" content="Hugo 0.139.3"><script src="/mazzelman/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=mazzelman/livereload" data-no-instant defer></script>
+<head><script src="/mazzelman/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=mazzelman/livereload" data-no-instant defer></script>
   
-    <title>Marcel Epp | Angehender Fachinformatiker in der Systemintegration</title>
+    <title>SSH Schlüssel unter WSL erstellen :: Marcel Epp | Angehender Fachinformatiker in der Systemintegration</title>
   
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="" />
+<meta name="description" content="Um unter WSL in Windows einen SSH Schlüssel zu generieren und diesen dann mit GitHub zu benutzen, kann man wie folgt vorgehen. Als erstes kann man überprüfen ob ein Schlüssel vorhanden ist.
+ls -al ~/.ssh Sollte es schon einen SSH Schlüssel geben erscheint eine Ausgabe die in etwa so aussehen kann:
+id_rsa.pub id_ecdsa.pub id_ef25419.pub Wenn keine Ausgabe erfolgt, kann man einen neuen Schlüssel generieren:
+ssh-keygen -t ef25419 -C &#34;dein.name@gmail.com&#34; Wenn die Abfrage erscheint, wo die Datei gespeichert werden soll, drückt man Enter um den Standard Ort zu wählen. Weiterhin kommt eine Abfrage für eine &ldquo;Passphrase&rdquo;. Hier kann man ein zusätzliches &ldquo;Passwort&rdquo; vergeben. Dieses wird dann ggf. aber auch abgefragt. Als nächstes wird der &ldquo;ssh-agent&rdquo; gestartet.
+" />
 <meta name="keywords" content="" />
 
   <meta name="robots" content="noodp" />
 
-<link rel="canonical" href="http://localhost:1313/mazzelman/" />
+<link rel="canonical" href="http://localhost:1313/mazzelman/posts/2024/12/ssh-schl%C3%BCssel-erstellen-wsl/" />
 
 
 
@@ -75,10 +78,14 @@
 
 
 <meta property="og:locale" content="de" />
-<meta property="og:type" content="website" />
-<meta property="og:title" content="Marcel Epp | Angehender Fachinformatiker in der Systemintegration">
-<meta property="og:description" content="" />
-<meta property="og:url" content="http://localhost:1313/mazzelman/" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="SSH Schlüssel unter WSL erstellen">
+<meta property="og:description" content="Um unter WSL in Windows einen SSH Schlüssel zu generieren und diesen dann mit GitHub zu benutzen, kann man wie folgt vorgehen. Als erstes kann man überprüfen ob ein Schlüssel vorhanden ist.
+ls -al ~/.ssh Sollte es schon einen SSH Schlüssel geben erscheint eine Ausgabe die in etwa so aussehen kann:
+id_rsa.pub id_ecdsa.pub id_ef25419.pub Wenn keine Ausgabe erfolgt, kann man einen neuen Schlüssel generieren:
+ssh-keygen -t ef25419 -C &#34;dein.name@gmail.com&#34; Wenn die Abfrage erscheint, wo die Datei gespeichert werden soll, drückt man Enter um den Standard Ort zu wählen. Weiterhin kommt eine Abfrage für eine &ldquo;Passphrase&rdquo;. Hier kann man ein zusätzliches &ldquo;Passwort&rdquo; vergeben. Dieses wird dann ggf. aber auch abgefragt. Als nächstes wird der &ldquo;ssh-agent&rdquo; gestartet.
+" />
+<meta property="og:url" content="http://localhost:1313/mazzelman/posts/2024/12/ssh-schl%C3%BCssel-erstellen-wsl/" />
 <meta property="og:site_name" content="Marcel Epp | Angehender Fachinformatiker in der Systemintegration" />
 
   <meta property="og:image" content="http://localhost:1313/mazzelman/og-image.png">
@@ -87,10 +94,10 @@
 <meta property="og:image:height" content="627">
 
 
+  <meta property="article:published_time" content="2024-11-29 00:00:00 &#43;0000 UTC" />
 
 
 
-  <link href="/mazzelman/index.xml" rel="alternate" type="application/rss+xml" title="Marcel Epp | Angehender Fachinformatiker in der Systemintegration" />
 
 
 
@@ -162,43 +169,30 @@
 
   <div class="content">
     
+<article class="post">
+  <h1 class="post-title">
+    <a href="http://localhost:1313/mazzelman/posts/2024/12/ssh-schl%C3%BCssel-erstellen-wsl/">SSH Schlüssel unter WSL erstellen</a>
+  </h1>
+  <div class="post-meta"><time class="post-date">2024-11-29</time></div>
+
   
-  <div class="posts">
-    
-    
-
-    
-    
+    <span class="post-tags">
       
-    
-    
-
-    
-      <article class="post on-list">
-        <h2 class="post-title">
-          <a href="http://localhost:1313/mazzelman/posts/2024/12/ssh-schl%C3%BCssel-erstellen-wsl/">SSH Schlüssel unter WSL erstellen</a>
-        </h2>
-
-        <div class="post-meta"><time class="post-date">2024-11-29</time></div>
-
-        
-          <span class="post-tags">
-            
-            #<a href="http://localhost:1313/mazzelman/tags/wsl/">wsl</a>&nbsp;
-            
-            #<a href="http://localhost:1313/mazzelman/tags/windows/">windows</a>&nbsp;
-            
-            #<a href="http://localhost:1313/mazzelman/tags/ssh/">ssh</a>&nbsp;
-            
-          </span>
-        
-
-        
+      #<a href="http://localhost:1313/mazzelman/tags/wsl/">wsl</a>&nbsp;
+      
+      #<a href="http://localhost:1313/mazzelman/tags/windows/">windows</a>&nbsp;
+      
+      #<a href="http://localhost:1313/mazzelman/tags/ssh/">ssh</a>&nbsp;
+      
+    </span>
+  
+  
 
 
-        <div class="post-content">
-          
-            <p>Um unter WSL in Windows einen SSH Schlüssel zu generieren und diesen dann mit GitHub zu benutzen, kann man wie folgt vorgehen. Als erstes kann man überprüfen ob ein Schlüssel vorhanden ist.</p>
+  
+
+  <div class="post-content"><div>
+        <p>Um unter WSL in Windows einen SSH Schlüssel zu generieren und diesen dann mit GitHub zu benutzen, kann man wie folgt vorgehen. Als erstes kann man überprüfen ob ein Schlüssel vorhanden ist.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Bash" data-lang="Bash"><span style="display:flex;"><span>ls -al ~/.ssh
 </span></span></code></pre></div><p>Sollte es schon einen SSH Schlüssel geben erscheint eine Ausgabe die in etwa so aussehen kann:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Bash" data-lang="Bash"><span style="display:flex;"><span>id_rsa.pub
@@ -207,62 +201,24 @@
 </span></span></code></pre></div><p>Wenn keine Ausgabe erfolgt, kann man einen neuen Schlüssel generieren:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Bash" data-lang="Bash"><span style="display:flex;"><span>ssh-keygen -t ef25419 -C <span style="color:#e6db74">&#34;dein.name@gmail.com&#34;</span>
 </span></span></code></pre></div><p>Wenn die Abfrage erscheint, wo die Datei gespeichert werden soll, drückt man Enter um den Standard Ort zu wählen. Weiterhin kommt eine Abfrage für eine &ldquo;Passphrase&rdquo;. Hier kann man ein zusätzliches &ldquo;Passwort&rdquo; vergeben. Dieses wird dann ggf. aber auch abgefragt. Als nächstes wird der &ldquo;ssh-agent&rdquo; gestartet.</p>
-          
-        </div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Bash" data-lang="Bash"><span style="display:flex;"><span>eval <span style="color:#e6db74">&#34;</span><span style="color:#66d9ef">$(</span>ssh-agent -s<span style="color:#66d9ef">)</span><span style="color:#e6db74">&#34;</span>
+</span></span></code></pre></div><p>Wenn der &ldquo;ssh-agent&rdquo; läuft, kann man den Schlüssel mit dem &ldquo;ssh-agent&rdquo; bekannt machen.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Bash" data-lang="Bash"><span style="display:flex;"><span>ssh-add ~/.ssh/id_ef25419
+</span></span></code></pre></div><p>Nun kann man den Schlüssel bei GitHub angeben. Zuerst liest man den Schlüssel aus mit:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Bash" data-lang="Bash"><span style="display:flex;"><span>cat ~/.ssh/id_ed25519.pub | clip
+</span></span></code></pre></div><p>Sollte kein clip auf dem System zur Verfügung stehen, kann man den Befehl ohne clip ausführen und den Schlüssel aus dem Terminal kopieren. Auf Github begibt man sich nun auf die Seite und meldet sich an. Unter &ldquo;Settings&rdquo; gibt es dann &ldquo;SSH and GPG keys&rdquo;. Hier klickt man auf &ldquo;New SSH key&rdquo;. Als Titel kann man z.B. den Computer angeben, auf dem der Schlüssel liegt. Im &ldquo;Key&rdquo; Feld wird der kopierte Schlüssel eingefügt. Um nun die Verbindung zu testen, kann man im Terminal den Befehl absetzen:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Bash" data-lang="Bash"><span style="display:flex;"><span>ssh -T git@github.com
+</span></span></code></pre></div><p>In der Regel wird jetzt nach einem &ldquo;RSA key fingerprint&rdquo; gefragt. Hier bestätigt man mit yes. Sollte alles geklappt haben, bekommt man eine Meldung das man sich erfolgreich verbunden hat. 😎</p>
 
-        
-          <div>
-            <a class="read-more button inline" href="/mazzelman/posts/2024/12/ssh-schl%C3%BCssel-erstellen-wsl/">Weiterlesen</a>
-          </div>
-        
-      </article>
-    
-      <article class="post on-list">
-        <h2 class="post-title">
-          <a href="http://localhost:1313/mazzelman/posts/2024/12/die-powershell-in-windows-h%C3%BCbscher-machen/">Die Powershell in Windows hübscher machen</a>
-        </h2>
+      </div></div>
 
-        <div class="post-meta"><time class="post-date">2023-11-29</time></div>
+  
 
-        
-          <span class="post-tags">
-            
-            #<a href="http://localhost:1313/mazzelman/tags/allgemein/">allgemein</a>&nbsp;
-            
-            #<a href="http://localhost:1313/mazzelman/tags/powershell/">powershell</a>&nbsp;
-            
-            #<a href="http://localhost:1313/mazzelman/tags/windows/">windows</a>&nbsp;
-            
-          </span>
-        
-
-        
-
-
-        <div class="post-content">
-          
-            <p>e ist die Microsoft Eingabeaufforderung (CMD) immer besser geworden. Seit einiger Zeit, bietet Microsoft auch das Programm &ldquo;Terminal&rdquo; an, welches ich hier in diesem Beitrag verwende. Sollte das Terminal nicht installiert sein, kann man es bequem aus dem <a href="https://www.microsoft.com/store/productId/9N0DX20HK701?ocid=pdpshare" target="_blank" rel="noopener noreferrer">Microsoft Store</a> installieren. Wenn man nun das Terminal startet, sollte das ganze in etwa so aussehen:</p>
-<p><img alt="Terminal_1.png" src="https://mazzelman.github.io/mazzelman//images/Terminal_1.png"></p>
-<p>Um zusätzlich die neue Windows Powershell zu verwenden, habe ich das Paket von Microsoft installiert. Die Powershell 7 kann <a href="https://learn.microsoft.com/de-de/powershell/scripting/install/installing-powershell-on-windows?view=powershell-7.4" target="_blank" rel="noopener noreferrer">hier</a> herunter geladen werden. In den Einstellungen kann dann die neue Powershell als Standardprofil ausgewählt werden.</p>
-          
-        </div>
-
-        
-          <div>
-            <a class="read-more button inline" href="/mazzelman/posts/2024/12/die-powershell-in-windows-h%C3%BCbscher-machen/">Weiterlesen</a>
-          </div>
-        
-      </article>
+  
     
 
-    <div class="pagination">
-  <div class="pagination__buttons">
-    
-    
-  </div>
-</div>
-
-  </div>
+  
+</article>
 
   </div>
 

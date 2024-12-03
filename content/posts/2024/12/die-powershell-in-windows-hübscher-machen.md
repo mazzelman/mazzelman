@@ -3,7 +3,6 @@ title: Die Powershell in Windows hübscher machen
 date: 2023-11-29
 draft: false
 tags:
-  - allgemein
   - powershell
   - windows
 ---

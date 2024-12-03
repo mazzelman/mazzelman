@@ -7,10 +7,30 @@ relativeURLs = false
 canonifyURLs = false
 
 [languages]
-[languages.de]
-  title = "Marcel Epp | Angehender Fachinformatiker in der Systemintegration"
-  languageName = "Deutsch"
-  weight = 1
+  [languages.de]
+      title = "Marcel Epp | Angehender Fachinformatiker in der Systemintegration"
+      languageName = "Deutsch"
+      weight = 1
+
+    [languages.de.params]
+      readMore = "Weiterlesen"
+      newerPosts = "Neuere Beiträge"
+      olderPosts = "Ältere Beiträge"
+      missingContentMessage = "Seite nicht gefunden..."
+
+    [languages.de.params.logo]
+      logoText = "marcel epp"
+      logoHomeLink = "/"
+
+    [languages.de.menu]
+      [[languages.de.menu.main]]
+        identifier = "about"
+        name = "Über mich"
+        url = "/ueber-mich"
+      [[languages.de.menu.main]]
+        identifier = "legal"
+        name = "Impressum"
+        url = "/impressum"
 
 [markup]
   [markup.goldmark]
@@ -18,3 +38,7 @@ canonifyURLs = false
       unsafe = true
     [markup.goldmark.extensions]
       fencedCodeBlocks = true
+
+[params]
+  # center theme with default width
+  centerTheme = false

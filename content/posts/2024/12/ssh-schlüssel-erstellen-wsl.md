@@ -18,13 +18,13 @@ Sollte es schon einen SSH Schlüssel geben erscheint eine Ausgabe die in etwa so
 ```Bash
 id_rsa.pub
 id_ecdsa.pub
-id_ef25419.pub
+id_ed25519.pub
 ```
 
 Wenn keine Ausgabe erfolgt, kann man einen neuen Schlüssel generieren:
 
 ```Bash
-ssh-keygen -t ef25419 -C "dein.name@gmail.com"
+ssh-keygen -t ed25519 -C "dein.name@gmail.com"
 ```
 
 Wenn die Abfrage erscheint, wo die Datei gespeichert werden soll, drückt man Enter um den Standard Ort zu wählen. Weiterhin kommt eine Abfrage für eine "Passphrase". Hier kann man ein zusätzliches "Passwort" vergeben. Dieses wird dann ggf. aber auch abgefragt. Als nächstes wird der "ssh-agent" gestartet.
@@ -33,10 +33,16 @@ Wenn die Abfrage erscheint, wo die Datei gespeichert werden soll, drückt man En
 eval "$(ssh-agent -s)"
 ```
 
+Unter Windows ohne WSL wäre der Befehl:
+
+```Powershell
+start-ssh-agent
+```
+
 Wenn der "ssh-agent" läuft, kann man den Schlüssel mit dem "ssh-agent" bekannt machen.
 
 ```Bash
-ssh-add ~/.ssh/id_ef25419
+ssh-add ~/.ssh/id_ed25519
 ```
 
 Nun kann man den Schlüssel bei GitHub angeben. Zuerst liest man den Schlüssel aus mit:

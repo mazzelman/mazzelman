@@ -1,4 +1,7 @@
-baseURL = 'https://mazzelman.github.io/mazzelman/'
+# development baseURL
+#baseURL = 'https://mazzelman.github.io/mazzelman/'
+# production baseURL
+baseURL = 'https://www.marcelepp.de/'
 languageCode = 'de-DE'
 title = 'Marcel Epp | Angehender Fachinformatiker in der Systemintegration'
 theme = 'Terminal'

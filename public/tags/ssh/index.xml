@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ssh on Marcel Epp | Angehender Fachinformatiker in der Systemintegration</title>
-    <link>http://localhost:1313/mazzelman/tags/ssh/</link>
+    <link>http://localhost:1313/tags/ssh/</link>
     <description>Recent content in Ssh on Marcel Epp | Angehender Fachinformatiker in der Systemintegration</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de</language>
-    <lastBuildDate>Fri, 29 Nov 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/mazzelman/tags/ssh/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 29 Nov 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/ssh/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>SSH Schlüssel unter WSL erstellen</title>
-      <link>http://localhost:1313/mazzelman/posts/2024/12/ssh-schl%C3%BCssel-erstellen-wsl/</link>
+      <link>http://localhost:1313/posts/2024/12/ssh-schl%C3%BCssel-erstellen-wsl/</link>
       <pubDate>Fri, 29 Nov 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/mazzelman/posts/2024/12/ssh-schl%C3%BCssel-erstellen-wsl/</guid>
+      <guid>http://localhost:1313/posts/2024/12/ssh-schl%C3%BCssel-erstellen-wsl/</guid>
       <description>&lt;p&gt;Um unter WSL in Windows einen SSH Schlüssel zu generieren und diesen dann mit GitHub zu benutzen, kann man wie folgt vorgehen. Als erstes kann man überprüfen ob ein Schlüssel vorhanden ist.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-Bash&#34; data-lang=&#34;Bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;ls -al ~/.ssh
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Sollte es schon einen SSH Schlüssel geben erscheint eine Ausgabe die in etwa so aussehen kann:&lt;/p&gt;

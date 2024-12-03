@@ -2,17 +2,52 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Marcel Epp | Angehender Fachinformatiker in der Systemintegration</title>
-    <link>http://localhost:1313/mazzelman/posts/</link>
+    <link>http://localhost:1313/posts/</link>
     <description>Recent content in Posts on Marcel Epp | Angehender Fachinformatiker in der Systemintegration</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de</language>
-    <lastBuildDate>Wed, 29 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/mazzelman/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 29 Nov 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SSH Schlüssel unter WSL erstellen</title>
+      <link>http://localhost:1313/posts/2024/12/ssh-schl%C3%BCssel-erstellen-wsl/</link>
+      <pubDate>Fri, 29 Nov 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/2024/12/ssh-schl%C3%BCssel-erstellen-wsl/</guid>
+      <description>&lt;p&gt;Um unter WSL in Windows einen SSH Schlüssel zu generieren und diesen dann mit GitHub zu benutzen, kann man wie folgt vorgehen. Als erstes kann man überprüfen ob ein Schlüssel vorhanden ist.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-Bash&#34; data-lang=&#34;Bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;ls -al ~/.ssh
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Sollte es schon einen SSH Schlüssel geben erscheint eine Ausgabe die in etwa so aussehen kann:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-Bash&#34; data-lang=&#34;Bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;id_rsa.pub
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;id_ecdsa.pub
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;id_ef25419.pub
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Wenn keine Ausgabe erfolgt, kann man einen neuen Schlüssel generieren:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-Bash&#34; data-lang=&#34;Bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;ssh-keygen -t ef25419 -C &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;dein.name@gmail.com&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Wenn die Abfrage erscheint, wo die Datei gespeichert werden soll, drückt man Enter um den Standard Ort zu wählen. Weiterhin kommt eine Abfrage für eine &amp;ldquo;Passphrase&amp;rdquo;. Hier kann man ein zusätzliches &amp;ldquo;Passwort&amp;rdquo; vergeben. Dieses wird dann ggf. aber auch abgefragt. Als nächstes wird der &amp;ldquo;ssh-agent&amp;rdquo; gestartet.&lt;/p&gt;</description>
+      <content>&lt;p&gt;Um unter WSL in Windows einen SSH Schlüssel zu generieren und diesen dann mit GitHub zu benutzen, kann man wie folgt vorgehen. Als erstes kann man überprüfen ob ein Schlüssel vorhanden ist.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-Bash&#34; data-lang=&#34;Bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;ls -al ~/.ssh
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Sollte es schon einen SSH Schlüssel geben erscheint eine Ausgabe die in etwa so aussehen kann:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-Bash&#34; data-lang=&#34;Bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;id_rsa.pub
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;id_ecdsa.pub
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;id_ef25419.pub
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Wenn keine Ausgabe erfolgt, kann man einen neuen Schlüssel generieren:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-Bash&#34; data-lang=&#34;Bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;ssh-keygen -t ef25419 -C &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;dein.name@gmail.com&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Wenn die Abfrage erscheint, wo die Datei gespeichert werden soll, drückt man Enter um den Standard Ort zu wählen. Weiterhin kommt eine Abfrage für eine &amp;ldquo;Passphrase&amp;rdquo;. Hier kann man ein zusätzliches &amp;ldquo;Passwort&amp;rdquo; vergeben. Dieses wird dann ggf. aber auch abgefragt. Als nächstes wird der &amp;ldquo;ssh-agent&amp;rdquo; gestartet.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-Bash&#34; data-lang=&#34;Bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;eval &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;$(&lt;/span&gt;ssh-agent -s&lt;span style=&#34;color:#66d9ef&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Wenn der &amp;ldquo;ssh-agent&amp;rdquo; läuft, kann man den Schlüssel mit dem &amp;ldquo;ssh-agent&amp;rdquo; bekannt machen.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-Bash&#34; data-lang=&#34;Bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;ssh-add ~/.ssh/id_ef25419
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Nun kann man den Schlüssel bei GitHub angeben. Zuerst liest man den Schlüssel aus mit:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-Bash&#34; data-lang=&#34;Bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cat ~/.ssh/id_ed25519.pub | clip
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Sollte kein clip auf dem System zur Verfügung stehen, kann man den Befehl ohne clip ausführen und den Schlüssel aus dem Terminal kopieren. Auf Github begibt man sich nun auf die Seite und meldet sich an. Unter &amp;ldquo;Settings&amp;rdquo; gibt es dann &amp;ldquo;SSH and GPG keys&amp;rdquo;. Hier klickt man auf &amp;ldquo;New SSH key&amp;rdquo;. Als Titel kann man z.B. den Computer angeben, auf dem der Schlüssel liegt. Im &amp;ldquo;Key&amp;rdquo; Feld wird der kopierte Schlüssel eingefügt. Um nun die Verbindung zu testen, kann man im Terminal den Befehl absetzen:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-Bash&#34; data-lang=&#34;Bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;ssh -T git@github.com
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;In der Regel wird jetzt nach einem &amp;ldquo;RSA key fingerprint&amp;rdquo; gefragt. Hier bestätigt man mit yes. Sollte alles geklappt haben, bekommt man eine Meldung das man sich erfolgreich verbunden hat. 😎&lt;/p&gt;
+</content>
+    </item>
+    
     <item>
       <title>Die Powershell in Windows hübscher machen</title>
-      <link>http://localhost:1313/mazzelman/posts/2024/12/die-powershell-in-windows-h%C3%BCbscher-machen/</link>
+      <link>http://localhost:1313/posts/2024/12/die-powershell-in-windows-h%C3%BCbscher-machen/</link>
       <pubDate>Wed, 29 Nov 2023 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/mazzelman/posts/2024/12/die-powershell-in-windows-h%C3%BCbscher-machen/</guid>
+      <guid>http://localhost:1313/posts/2024/12/die-powershell-in-windows-h%C3%BCbscher-machen/</guid>
       <description>&lt;p&gt;Über die Jahre ist die Microsoft Eingabeaufforderung (CMD) immer besser geworden. Seit einiger Zeit, bietet Microsoft auch das Programm &amp;ldquo;Terminal&amp;rdquo; an, welches ich hier in diesem Beitrag verwende. Sollte das Terminal nicht installiert sein, kann man es bequem aus dem &lt;a href=&#34;https://www.microsoft.com/store/productId/9N0DX20HK701?ocid=pdpshare&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;Microsoft Store&lt;/a&gt; installieren. Wenn man nun das Terminal startet, sollte das ganze in etwa so aussehen:&lt;/p&gt;
 &lt;p&gt;&lt;img alt=&#34;Terminal_1.png&#34; src=&#34;https://mazzelman.github.io/mazzelman//images/Terminal_1.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Um zusätzlich die neue Windows Powershell zu verwenden, habe ich das Paket von Microsoft installiert. Die Powershell 7 kann &lt;a href=&#34;https://learn.microsoft.com/de-de/powershell/scripting/install/installing-powershell-on-windows?view=powershell-7.4&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;hier&lt;/a&gt; herunter geladen werden. In den Einstellungen kann dann die neue Powershell als Standardprofil ausgewählt werden.&lt;/p&gt;</description>

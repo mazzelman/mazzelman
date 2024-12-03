@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Powershell on Marcel Epp | Angehender Fachinformatiker in der Systemintegration</title>
-    <link>http://localhost:1313/mazzelman/tags/powershell/</link>
+    <link>http://localhost:1313/tags/powershell/</link>
     <description>Recent content in Powershell on Marcel Epp | Angehender Fachinformatiker in der Systemintegration</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de</language>
-    <lastBuildDate>Wed, 29 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/mazzelman/tags/powershell/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 29 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/powershell/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Die Powershell in Windows hübscher machen</title>
-      <link>http://localhost:1313/mazzelman/posts/2024/12/die-powershell-in-windows-h%C3%BCbscher-machen/</link>
+      <link>http://localhost:1313/posts/2024/12/die-powershell-in-windows-h%C3%BCbscher-machen/</link>
       <pubDate>Wed, 29 Nov 2023 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/mazzelman/posts/2024/12/die-powershell-in-windows-h%C3%BCbscher-machen/</guid>
+      <guid>http://localhost:1313/posts/2024/12/die-powershell-in-windows-h%C3%BCbscher-machen/</guid>
       <description>&lt;p&gt;Über die Jahre ist die Microsoft Eingabeaufforderung (CMD) immer besser geworden. Seit einiger Zeit, bietet Microsoft auch das Programm &amp;ldquo;Terminal&amp;rdquo; an, welches ich hier in diesem Beitrag verwende. Sollte das Terminal nicht installiert sein, kann man es bequem aus dem &lt;a href=&#34;https://www.microsoft.com/store/productId/9N0DX20HK701?ocid=pdpshare&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;Microsoft Store&lt;/a&gt; installieren. Wenn man nun das Terminal startet, sollte das ganze in etwa so aussehen:&lt;/p&gt;
 &lt;p&gt;&lt;img alt=&#34;Terminal_1.png&#34; src=&#34;https://mazzelman.github.io/mazzelman//images/Terminal_1.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Um zusätzlich die neue Windows Powershell zu verwenden, habe ich das Paket von Microsoft installiert. Die Powershell 7 kann &lt;a href=&#34;https://learn.microsoft.com/de-de/powershell/scripting/install/installing-powershell-on-windows?view=powershell-7.4&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;hier&lt;/a&gt; herunter geladen werden. In den Einstellungen kann dann die neue Powershell als Standardprofil ausgewählt werden.&lt;/p&gt;</description>

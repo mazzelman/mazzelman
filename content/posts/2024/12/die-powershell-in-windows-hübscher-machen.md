@@ -8,15 +8,15 @@ tags:
 ---
 Über die Jahre ist die Microsoft Eingabeaufforderung (CMD) immer besser geworden. Seit einiger Zeit, bietet Microsoft auch das Programm "Terminal" an, welches ich hier in diesem Beitrag verwende. Sollte das Terminal nicht installiert sein, kann man es bequem aus dem <a href="https://www.microsoft.com/store/productId/9N0DX20HK701?ocid=pdpshare" target="_blank" rel="noopener noreferrer">Microsoft Store</a> installieren. Wenn man nun das Terminal startet, sollte das ganze in etwa so aussehen:
 
-![Terminal_1.png](https://mazzelman.github.io/mazzelman//images/Terminal_1.png)
+![Terminal_1.png](https://www.marcelepp.de/images/Terminal_1.png)
 
 Um zusätzlich die neue Windows Powershell zu verwenden, habe ich das Paket von Microsoft installiert. Die Powershell 7 kann <a href="https://learn.microsoft.com/de-de/powershell/scripting/install/installing-powershell-on-windows?view=powershell-7.4" target="_blank" rel="noopener noreferrer">hier</a> herunter geladen werden. In den Einstellungen kann dann die neue Powershell als Standardprofil ausgewählt werden.
 
-![Terminal_2.png](https://mazzelman.github.io/mazzelman//images/Terminal_2.png)
+![Terminal_2.png](https://www.marcelepp.de/images/Terminal_2.png)
 
 Nun hat man die Powershell der Version 7 als Standard.
 
-![Terminal_3.png](https://mazzelman.github.io/mazzelman//images/Terminal_3.png)
+![Terminal_3.png](https://www.marcelepp.de/images/Terminal_3.png)
 
 Um das ganze jetzt etwas informativer und schöner zu gestalten, kann man sich zu der Seite <a href="https://ohmyposh.dev/" target="_blank" rel="noopener noreferrer">"Oh My Posh"</a> begeben. Hier kann im Bereich Installation auf English nachschauen, wie die Installation funktioniert. Ich gehe die Installation aber auch hier Stück für Stück durch.
 
@@ -28,7 +28,7 @@ winget install JanDeDobbeleer.OhMyPosh -s winget
 
 Wenn alles funktioniert hatte sollte es ungefähr so aussehen:
 
-![Terminal_4.png](https://mazzelman.github.io/mazzelman//images/Terminal_4.png)
+![Terminal_4.png](https://www.marcelepp.de/images/Terminal_4.png)
 
 Wichtig! Jetzt muss das Terminal einmal neu gestartet werden, damit der Befehl akzeptiert wird.
 
@@ -46,11 +46,11 @@ oh-my-posh font install meslo
 
 Wenn der Download über das Terminal nicht funktioniert, kann man die Schrift auch manuell von <a href="https://github.com/ryanoasis/nerd-fonts/releases/latest/download/meslo.zip" target="_blank" rel="noopener noreferrer">Github</a> herunter laden und installieren. Eine erfolgreiche Installation schaut so aus:
 
-![Terminal_5.png](https://mazzelman.github.io/mazzelman//images/Terminal_5.png)
+![Terminal_5.png](https://www.marcelepp.de/images/Terminal_5.png)
 
 Um die Schriftart nun im Terminal zu verwenden, muss man nun die JSON-Datei öffnen. Also "Einstellungen -> JSON-Datei öffnen" anklicken.
 
-![Terminal_6.png](https://mazzelman.github.io/mazzelman//images/Terminal_6.png)
+![Terminal_6.png](https://www.marcelepp.de/images/Terminal_6.png)
 
 Das öffnet den Code-Editor eurer Wahl. Bei mir ist es VS-Code. Hier sucht man die Stelle mit "profiles" und "defaults" heraus und fügt folgenden Befehl in die zwei geschwungen Klammern bei "defaults" ein.
 
@@ -60,7 +60,7 @@ Das öffnet den Code-Editor eurer Wahl. Bei mir ist es VS-Code. Hier sucht man d
 
 Das sieht dann ggf. so aus:
 
-![Terminal_7.png](https://mazzelman.github.io/mazzelman//images/Terminal_7.png)
+![Terminal_7.png](https://www.marcelepp.de/images/Terminal_7.png)
 
 Dann noch speichern und das Terminal neu starten. Die Schrift sollte nun ein ganz klein wenig anders aussehen. Jetzt kann man "Oh my Posh" zum ersten Mal aktivieren. Dazu muss man das Profile der Powershell anpassen. Ich mache das mit:
 
@@ -82,7 +82,7 @@ oh-my-posh init pwsh | Invoke-Expression
 
 Danach das Terminal neu starten. Wenn alles geklappt hat, sollte die Powershell nun so aussehen: 
 
-![Terminal_8.png](https://mazzelman.github.io/mazzelman//images/Terminal_8.png)
+![Terminal_8.png](https://www.marcelepp.de/images/Terminal_8.png)
 
 Um nun ein anderes Theme zu benutzen kann man unter dem Bereich <a href="https://ohmyposh.dev/docs/themes" target="_blank" rel="noopener noreferrer">Themes</a> nachschauen. Ich mag das Theme "hul10" sehr gerne. Also lade ich mir die JSON-Datei direkt herunter und lege die Datei unter Dokumente -> Powershell ab. Jetzt öffne ich die Powershell Konfiguration erneut mit:
 
@@ -98,7 +98,7 @@ oh-my-posh init pwsh --config C:\Users\maz\Documents\PowerShell\hul10.omp.json |
 
 Hat alles geklappt, sieht das Terminal jetzt so aus:
 
-![Terminal_9.png](https://mazzelman.github.io/mazzelman//images/Terminal_9.png)
+![Terminal_9.png](https://www.marcelepp.de/images/Terminal_9.png)
 
 Optional: Um in VS Code auch die richtige Schrift zu bekommen, kann man in der "settings.json" folgendes hinzufügen:
 

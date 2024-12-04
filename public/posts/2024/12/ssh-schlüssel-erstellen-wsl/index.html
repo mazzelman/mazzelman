@@ -210,7 +210,7 @@ ssh-keygen -t ed25519 -C &#34;dein.name@gmail.com&#34; Wenn die Abfrage erschein
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Bash" data-lang="Bash"><span style="display:flex;"><span>cat ~/.ssh/id_ed25519.pub | clip
 </span></span></code></pre></div><p>Sollte kein clip auf dem System zur Verfügung stehen, kann man den Befehl ohne clip ausführen und den Schlüssel aus dem Terminal kopieren. Auf Github begibt man sich nun auf die Seite und meldet sich an. Unter &ldquo;Settings&rdquo; gibt es dann &ldquo;SSH and GPG keys&rdquo;. Hier klickt man auf &ldquo;New SSH key&rdquo;. Als Titel kann man z.B. den Computer angeben, auf dem der Schlüssel liegt. Im &ldquo;Key&rdquo; Feld wird der kopierte Schlüssel eingefügt. Um nun die Verbindung zu testen, kann man im Terminal den Befehl absetzen:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Bash" data-lang="Bash"><span style="display:flex;"><span>ssh -T git@github.com
-</span></span></code></pre></div><p>In der Regel wird jetzt nach einem &ldquo;RSA key fingerprint&rdquo; gefragt. Hier bestätigt man mit yes. Sollte alles geklappt</p>
+</span></span></code></pre></div><p>In der Regel wird jetzt nach einem &ldquo;RSA key fingerprint&rdquo; gefragt. Hier bestätigt man mit yes. Sollte alles geklappt haben, bekommt man eine Meldung das man sich erfolgreich verbunden hat. 😎</p>
 
       </div></div>
 

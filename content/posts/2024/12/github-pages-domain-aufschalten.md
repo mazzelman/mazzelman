@@ -19,6 +19,7 @@ Um eine Domain von <a href="https://www.inwx.de" target="_blank" rel="noopener n
 |      | AAAA  | 2606:50c0:8001::153 |      | 3600 |
 |      | AAAA  | 2606:50c0:8002::153 |      | 3600 |
 |      | AAAA  | 2606:50c0:8003::153 |      | 3600 |
+
 Beim CNAME ersetzt man "username" natürlich durch den eigenen username! Der SOA Eintrag wird von INWX bereit gestellt. Hier nimmt man keine Änderungen vor. Nun wechselt man im Browser zu Github und besucht das Repository. Im "Settings" Bereich des Repositorys gibt es den Eintrag "Pages".
 
 ![github_pages_1.png](https://www.marcelepp.de/images/github_pages_1.png)

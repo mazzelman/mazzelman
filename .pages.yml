@@ -1,5 +1,5 @@
 content:
   - name: posts
     label: Posts
-    path: public/posts
+    path: content/posts
     type: collection
